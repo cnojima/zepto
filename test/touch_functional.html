@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Zepto touch functional test</title>
-  <meta name="viewport" content="maximum-scale=1,initial-scale=1,user-scalable=0">
-  <script src="../src/polyfill.js"></script>
-  <script src="../src/zepto.js"></script>
-  <script src="../src/event.js"></script>
-  <script src="../src/touch.js"></script>
+<meta charset="utf-8">
+<title>Zepto touch functional test</title>
+<meta name="viewport"
+	content="maximum-scale=1,initial-scale=1,user-scalable=0">
+<script src="../src/polyfill.js"></script>
+<script src="../src/zepto.js"></script>
+<script src="../src/event.js"></script>
+<script src="../src/touch.js"></script>
 </head>
 <body>
-  <h1>Zepto touch functional test</h1>
+	<h1>Zepto touch functional test</h1>
 
-  <div id="touch_test" style="width: 200px; height: 200px; background: #cce; -webkit-user-select: none">
-    touch events test
-  </div>
+	<div id="touch_test"
+		style="width: 200px; height: 200px; background: #cce; -webkit-user-select: none">
+		touch events test</div>
 
-  <div id='touch_test_scrollable' style="width: 200px; height: 200px; background: #cec; -webkit-user-select: none">
-    touch events test (scrollable cancel)
-  </div>
+	<div id='touch_test_scrollable'
+		style="width: 200px; height: 200px; background: #cec; -webkit-user-select: none">
+		touch events test (scrollable cancel)</div>
 
-  <div id='touch_test_single' style="width: 200px; height: 200px; background: #ecc; -webkit-user-select: none">
-    touch events test (scrollable cancel, single tap only)
-  </div>
+	<div id='touch_test_single'
+		style="width: 200px; height: 200px; background: #ecc; -webkit-user-select: none">
+		touch events test (scrollable cancel, single tap only)</div>
 
-  <div id="browser"> </div>
+	<div id="browser"></div>
 
-  <script>
+	<script>
     $('#browser').text(navigator.userAgent)
 
     /**
